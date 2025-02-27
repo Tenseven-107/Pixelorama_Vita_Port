@@ -186,10 +186,10 @@ func setup_application_window_size() -> void:
 	if OS.get_name() == "HTML5":
 		return
 	# Set a minimum window size to prevent UI elements from collapsing on each other.
-	OS.min_window_size = Vector2(1024, 576)
+	OS.min_window_size = Vector2(960, 544) # Vita Rsolution is 960 x 544
 
 	get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_DISABLED,
-		SceneTree.STRETCH_ASPECT_IGNORE, Vector2(1024,576), Global.shrink)
+		SceneTree.STRETCH_ASPECT_IGNORE, Vector2(960,544), Global.shrink)
 
 	# Restore the window position/size if values are present in the configuration cache
 	if Global.config_cache.has_section_key("window", "screen"):

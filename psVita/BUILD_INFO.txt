@@ -1,0 +1,3 @@
+To build Pixelorama for the PSVita, install the build template in this directory and use the Godot editor client from this repository:
+
+- tps://github.com/SonicMastr/godot-vita/releases
